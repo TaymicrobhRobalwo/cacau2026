@@ -266,49 +266,49 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addToCart = (index, type = 'regular') => {
         // Redirecionamento específico para o primeiro produto da promoção
         if (type === 'promo' && index === 0) {
-            window.location.href = appendUtm('checkout/checkout1.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/eca99954-7dc0-41cb-9998-d8db7f3a2826');
             return;
         }
 
         // Redirecionamento específico para o segundo produto da promoção
         if (type === 'promo' && index === 1) {
-            window.location.href = appendUtm('checkout/checkout2.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/4e61e8fd-fa93-4640-bbc5-6c83eb71e18d');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 0 (Snoopy Astronauta)
         if (type === 'regular' && index === 0) {
-            window.location.href = appendUtm('checkout/checkout3.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/3084775e-163b-480c-8494-ea6e8209e220');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 1 (Pelúcia Animadinha com LED Ursinhos)
         if (type === 'regular' && index === 1) {
-            window.location.href = appendUtm('checkout/checkout4.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/8d06d0b3-7145-4b17-a73b-51decf3bd2cd');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 2 (Zangadinho com LED Ursinhos)
         if (type === 'regular' && index === 2) {
-            window.location.href = appendUtm('checkout/checkout5.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/f183342a-db0a-4127-8fd8-947178201045');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 3 (Patrulha Canina Garrafa Chase)
         if (type === 'regular' && index === 3) {
-            window.location.href = appendUtm('checkout/checkout6.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/47970af3-c0b9-4c8b-ae2f-fbd52030e702');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 4 (laCreme Zero Açúcar)
         if (type === 'regular' && index === 4) {
-            window.location.href = appendUtm('checkout/checkout7.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/8a3cb086-51f8-4e06-82f4-50913c2ace71');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 5 (Chapéu Seletor Harry Potter)
         if (type === 'regular' && index === 5) {
-            window.location.href = appendUtm('checkout/checkout8.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/aa910ff0-4926-4c4e-ad16-19a7d7d8741b');
             return;
         }
 
@@ -316,19 +316,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Redirecionamento específico para o produto regular index 6 (Dreams Brigadeiro)
         if (type === 'regular' && index === 6) {
-            window.location.href = appendUtm('checkout/checkout9.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/3199ddfa-e6aa-4f56-882c-72ebc73028c0');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 7 (Dreams Brownie)
         if (type === 'regular' && index === 7) {
-            window.location.href = appendUtm('checkout/checkout10.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/69cfe4a4-2699-46a4-b83c-04b530bd95cf');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 8 (Dreams Coco Caramelizado)
         if (type === 'regular' && index === 8) {
-            window.location.href = appendUtm('checkout/checkout11.html');
+            window.location.href = appendUtm('https://pagamento.pirulitosticky.store/pay/4b5192ac-0269-4efc-8e80-4ab242441611');
             return;
         }
 
