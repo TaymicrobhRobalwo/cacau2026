@@ -115,10 +115,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderProducts() {
         productsGrid.innerHTML = '';
-        products.forEach((product, index) => { 
+        products.forEach((product, index) => {
             const productCard = document.createElement('div');
             productCard.className = 'product-card';
-            
+
             const finalPrice = product.price.toFixed(2);
             const originalPrice = product.originalPrice.toFixed(2);
 
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="add-to-cart-btn" data-index="${index}" data-type="regular">COMPRAR AGORA</button>
                 </div>
             `;
-            
+
             productsGrid.appendChild(productCard);
         });
     }
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         promoProducts.forEach((product, index) => {
             const productCard = document.createElement('div');
             productCard.className = 'product-card';
-            
+
             const finalPrice = product.price.toFixed(2);
             const originalPrice = product.originalPrice.toFixed(2);
 
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="add-to-cart-btn" data-index="${index}" data-type="promo">COMPRAR AGORA</button>
                 </div>
             `;
-            
+
             promoProductsGrid.appendChild(productCard);
         });
     }
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const timer = setInterval(() => {
             duration--;
-            
+
             if (duration < 0) {
                 duration = 0;
                 display.textContent = "00:00";
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Cart Notification
     const cartCount = document.querySelector('.cart-count');
-    
+
     // Initialize Cart from LocalStorage
     let cart = JSON.parse(localStorage.getItem('cs_cart')) || [];
     updateCartCount();
@@ -266,49 +266,49 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addToCart = (index, type = 'regular') => {
         // Redirecionamento específico para o primeiro produto da promoção
         if (type === 'promo' && index === 0) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=1a1f9ed5-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout1.html');
             return;
         }
 
         // Redirecionamento específico para o segundo produto da promoção
         if (type === 'promo' && index === 1) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=2654367d-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout2.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 0 (Snoopy Astronauta)
         if (type === 'regular' && index === 0) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=05bc73c2-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout3.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 1 (Pelúcia Animadinha com LED Ursinhos)
         if (type === 'regular' && index === 1) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=0f30b0fb-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout4.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 2 (Zangadinho com LED Ursinhos)
         if (type === 'regular' && index === 2) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=32280a28-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout5.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 3 (Patrulha Canina Garrafa Chase)
         if (type === 'regular' && index === 3) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=43a8aad4-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout6.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 4 (laCreme Zero Açúcar)
         if (type === 'regular' && index === 4) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=4ce9e04e-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout7.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 5 (Chapéu Seletor Harry Potter)
         if (type === 'regular' && index === 5) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=56248c17-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout8.html');
             return;
         }
 
@@ -316,25 +316,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Redirecionamento específico para o produto regular index 6 (Dreams Brigadeiro)
         if (type === 'regular' && index === 6) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=614fa3d6-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout9.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 7 (Dreams Brownie)
         if (type === 'regular' && index === 7) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=68841540-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout10.html');
             return;
         }
 
         // Redirecionamento específico para o produto regular index 8 (Dreams Coco Caramelizado)
         if (type === 'regular' && index === 8) {
-            window.location.href = appendUtm('https://pagamento.pascoa-cacau2026.online/checkout?product=703124da-11b0-11f1-b2a5-46da4690ad53');
+            window.location.href = appendUtm('checkout/checkout11.html');
             return;
         }
 
         const product = type === 'promo' ? promoProducts[index] : products[index];
         const existingItem = cart.find(item => item.name === product.name);
-        
+
         if (existingItem) {
             existingItem.quantity += 1;
         } else {
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 finalPrice: product.price.toFixed(2)
             });
         }
-        
+
         saveCart();
         updateCartCount();
         showToast("Produto adicionado ao carrinho!");
@@ -418,14 +418,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         if (sideSubtotal) sideSubtotal.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
         if (sideTotal) sideTotal.textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
-        
+
         // Update links with UTMs
         const checkoutUrl = appendUtm('checkout.html');
         const cartUrl = appendUtm('cart.html');
-        
+
         const sideCheckoutBtn = document.querySelector('.side-checkout-btn');
         const sideViewCartBtn = document.querySelector('.side-view-cart');
-        
+
         if (sideCheckoutBtn) sideCheckoutBtn.href = checkoutUrl;
         if (sideViewCartBtn) sideViewCartBtn.href = cartUrl;
     }
@@ -478,10 +478,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showNotification() {
         if (!notificationContainer) return;
-        
+
         const name = names[Math.floor(Math.random() * names.length)];
         const action = actions[Math.floor(Math.random() * actions.length)];
-        
+
         const notification = document.createElement('div');
         notification.className = 'notification';
         notification.innerHTML = `
